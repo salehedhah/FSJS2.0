@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #f9f5ed;
+}
+
+nav{
+    padding:20px 10%;
+    height: 15vh;
+}
+
+nav div .list{
+    display: flex;
+    align-items: center;
+    list-style-type:none
+}
+
+nav div .list .list-item{
+    margin-right: 5%;
+    font-weight: 500;
+}
+
+/* --------main section CSS ------*/
+main{
+    display: flex;
+    align-items: center;
+
+}
+
+.left-sec{
+    margin-left: 10%;
+    width: 40%;
+}
+
+.left-sec h1 {
+    font-size:67px;
+    
+}
+
+.left-sec p{
+    margin: 6% 0;
+}
+
+.left-sec button{
+    padding: 15px 20px;
+    border: none;
+    background-color: #3b855b;
+    border-radius: 10px;
+    color: white;
+    font-weight: 500;
+}
+
+.right-sec{
+    width: 60%;
+}
+
+.top-pics{
+    margin-bottom: 10px;
+}
+
+.top-pics > img {
+    margin-right: 10px;
+}
+
+
+/* media queries  */
+
+/* screen-size from 540px to 1200px  */
+@media only screen and (min-width: 540px) and (max-width:1200px){
+    body{
+        overflow: hidden;
+    }
+    main{
+        align-items: center;
+    }
+    .left-sec{
+        width: 42%;
+
+    }
+    .left-sec h1 {
+        font-size: 30px;
+    }
+    .left-sec p{
+        margin-right: 90px;
+    }
+    .right-sec{
+        width:50%;
+    }
+    .top-pics > img{
+        width: 40%;
+    }
+    .bottom-pic > img{
+        width: 83%;
+    }
+}
+
+/* screen-size from 0 till 540px */
+
+@media only screen and (max-width: 540px){
+    body{
+        overflow: hidden;
+    }
+    nav{
+        padding: 20px 5%;
+    }
+    main{
+        align-items: center;
+    }
+    .left-sec{
+        width: 40%;
+    }
+    .left-sec h1 {
+        font-size: 20px;
+    }
+    .left-sec p{
+        font-size: 15px;
+    }
+    .right-sec{
+        width:50%;
+        margin-left: 20px;
+    }
+    .top-pics > img{
+        width: 40%;
+    }
+    .bottom-pic > img{
+        width: 83%;
+    }
+}
+

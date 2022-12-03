@@ -1,0 +1,98 @@
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.container{
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+/* navbar container */
+.navbar-container{
+    display: flex;
+    align-items: center;
+    
+}
+
+/* logo */
+[alt="brand-logo"]{
+    height: 40px;
+    margin-right: 20px;
+}
+
+/* navbar items styling */
+.grow-list{
+    margin-left: 30px;
+}
+.list{
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+}
+
+.list-item{
+    color: #758283;
+}
+
+.list-item:nth-child(1){
+    color: #242b2e;
+    font-weight: 500;
+}
+
+/* navbar button */
+.button-group{
+    margin-left: auto;
+}
+
+.nav-button{
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: #5955b3;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+/* Banner styling  */
+
+/* Left text  */
+.banner-container div:nth-child(1) {
+    max-width: 400px;
+    margin-top: 100px;
+}
+
+.heading-text{
+    font-size: 3em;
+    line-height: 1.2em;
+    color: #3c3060;
+}
+
+.heading-text span{
+    color: #5955b3;
+}
+
+.description{
+    color: #758283;
+    margin: 30px 0;
+}
+
+.nav-button.btn{
+    font-size: 1.2em;
+}
+
+/*right text  */
+[alt="illustration"] {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+    height: 80vh;   
+}

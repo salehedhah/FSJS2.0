@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* --------nav bar CSS---------  */
+body{
+    background-color: #F0F4F5;
+    overflow: hidden;
+}
+nav {
+    margin: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 15vh;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li{
+    margin-right: 50px;
+    font-weight: 600;
+}
+
+nav ul li:first-child{
+    color: green;
+}
+
+
+/* ------------main body CSS-------- */
+section{
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 75vh;
+}
+
+section > div {
+    width: 50%;
+}
+
+.left-text{
+    margin-left: 7%;
+}
+
+.left-text .topAngle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+}
+
+.left-text h1{
+    font-size: 70px;
+}
+
+.left-text p{
+    color: #808080;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.left-text .bottomAngle {
+    position: absolute;
+    left: 48.3%;
+}
+
+.left-text .setTheScope{
+    width: 40%;
+    position: absolute;
+    top: 40px;
+    left: 13%;
+    z-index: -1;
+}
+
+.left-text .mouse {
+    position: absolute;
+    width: 30px;
+    left: 52.5%;
+    top: 77%;
+}
+
+.left-text button {
+    color: white ;
+    background-color: green;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 40px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.greenBox{
+    position: absolute;
+    right: 0;
+    top: 2rem;
+    width:34rem;
+    z-index: -1;
+
+}
+
+.orangeBox{
+    position: absolute;
+    right: 0;
+    top: 6rem;
+    width:29rem;
+    z-index: -1;
+}
+
+.doctor{
+    position: absolute;
+    height: 40rem;
+    right: 0;
+    top: -38px;
+}

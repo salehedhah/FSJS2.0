@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>images in html</title>
+</head>
+<body>
+
+
+    <h1>the usage of usemap</h1>
+    <img 
+    src="./images/img.png" 
+    alt="breakfast" 
+    usemap="#img-map">
+
+     use map is used to create a clickable parts of an image based on the coordinates on that image
+
+    <map name="img-map">
+        <area shape="rect" coords="389,125,649,523" href="" onclick="coffee()" alt="coffee">
+        <area shape="circle" coords="180,618,117" href="" onclick="pancakes()" alt="PANCAKES">
+    </map>
+
+    <script>
+        function  coffee(){
+            alert("hand made coffe")
+        }
+
+        function  pancakes(){
+            alert("hand made pancakes")
+        }
+    </script>
+</body>
+</html>
