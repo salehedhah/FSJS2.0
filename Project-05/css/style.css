@@ -30,6 +30,18 @@ nav ul li:first-child{
     color: green;
 }
 
+.menu-icon{
+    display: none;
+}
+.burger-icon{
+    width: 35px;
+    height: 5px;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.815);
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
 
 /* ------------main body CSS-------- */
 section{
@@ -117,4 +129,293 @@ section > div {
     height: 40rem;
     right: 0;
     top: -38px;
+}
+
+
+@media screen and (max-width:1146px){
+    section > div{
+        width: 40%;
+    }
+    .left-text h1{
+        font-size: 45px;
+    }
+    
+    .left-text p{
+        font-size: 17px;
+    }
+    .left-text .bottomAngle {
+        left: 40%;
+    }
+    
+    .left-text .setTheScope{
+        width: 30%;        
+    }
+    
+    .left-text .mouse {
+        width: 30px;
+        left: 43%;
+        top: 80%;
+    }
+}
+@media screen and (max-width:999px){
+    .greenBox{
+        right: 0;
+        top: 2rem;
+        width:25rem;
+        z-index: -1;
+    
+    }
+    
+    .orangeBox{
+        top: 4rem;
+        width:22rem;
+        z-index: -1;
+    }
+    
+    .doctor{
+        height: 35rem;
+        right: 0;
+        top: -38px;
+    }
+    .left-text .bottomAngle {
+        left: 40%;
+        top: 70%;
+        
+    }
+    
+    .left-text .mouse {
+        width: 30px;
+        left: 43%;
+        top: 80%;
+    }
+}
+@media screen and (max-width:868px) {
+    section > div{
+        min-width: 30%;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .left-text .setTheScope{
+        width: 30%;  
+        top: 7rem;      
+    }
+    .left-text h1{
+        font-size: 30px;
+    }
+    nav ul{
+        display: none;
+    }
+    
+    .left-text p{
+        font-size: 16px;
+    color: #3b3b3b;
+    font-weight: 500;
+
+    }
+    .left-text button {
+        padding: 15px 20px;
+        border: none;
+        font-size: 18px;
+    }
+    
+    .greenBox{
+        right: 0;
+        top: 2rem;
+        width:20rem;
+    
+    }
+    
+    .orangeBox{
+        top: 4rem;
+        width:17rem;
+        z-index: -1;
+    }
+    
+    .doctor{
+        height: 30rem;
+        right: 0;
+        top: -38px;
+    }
+    .left-text .topAngle, .left-text .bottomAngle{
+        
+        width: 18px;
+    }
+    .left-text .bottomAngle {
+        left: 40%;
+        top: 63%;
+        
+    }
+    
+    .left-text .mouse {
+        width: 30px;
+        left: 43%;
+        top: 68%;
+    }
+}
+
+@media screen and (max-width:620px) and (min-width:450px) {
+    section > div{
+        min-width: 13rem;
+    }
+    
+    .left-text h1{
+        font-size: 20px;
+    }
+    
+    .left-text p{
+        font-size: 16px;
+    color: #3b3b3b;
+    font-weight: 500;
+
+    }
+    .left-text button {
+        padding: 10px 10px;
+        border: none;
+        font-size: 13px;
+    }
+    
+    .greenBox{
+        right: 0;
+        top: 10rem;
+        width:9rem;
+    
+    }
+    
+    .orangeBox{
+        top: 11rem;
+        width:8rem;
+        z-index: -1;
+    }
+    
+    .doctor{
+        height: 17rem;
+        right: 0;
+        top: 7rem;
+    }
+    .left-text .topAngle, .left-text .bottomAngle{
+        
+        width: 18px;
+    }
+    .left-text .bottomAngle {
+        left: 40%;
+        top: 63%;
+        
+    }
+    
+    .left-text .mouse {
+        width: 30px;
+        left: 43%;
+        top: 68%;
+    }
+}
+
+@media screen and (max-width:450px) and (min-width:385px) {
+    section > div{
+        min-width: 13rem;
+    }
+    .left-text .setTheScope{
+        width: 30%;  
+        top: 8rem;      
+    }
+    
+    .left-text h1{
+        font-size: 18px;
+    }
+    
+    .left-text p{
+    font-size: 14px;
+    color: #3b3b3b;
+    font-weight: 500;
+
+    }
+    .left-text button {
+        padding: 10px 10px;
+        border: none;
+        font-size: 13px;
+    }
+    
+    .greenBox{
+        right: 0;
+        top: 9rem;
+        width:10rem;
+    
+    }
+    
+    .orangeBox{
+        top: 10rem;
+        width:9rem;
+        z-index: -1;
+    }
+    
+    .doctor{
+        height: 16rem;
+        right: 0;
+        top: 90px;
+    }
+    .left-text .topAngle, .left-text .bottomAngle{
+        
+        width: 18px;
+    }
+    .left-text .bottomAngle {
+        left: 40%;
+        top: 63%;
+        
+    }
+    
+    .left-text .mouse {
+        width: 30px;
+        left: 43%;
+        top: 68%;
+    }
+}
+
+@media screen and (max-width:385px) {
+    section > .left-text{
+        min-width: 20rem;
+    }
+    section > .right-text{
+        width: 5rem;
+    }
+    .right-text{
+        z-index: -1;
+    }
+    
+    .left-text h1{
+        font-size: 30px;
+    }
+    
+    .left-text p{
+    font-size: 20px;
+    color: #3b3b3b;
+    font-weight: 500;
+
+    }
+    .left-text button {
+        padding: 15px 35px;
+        border: none;
+        font-size: 20px;
+        position: relative;
+        top: 4rem;
+        left: 2.5rem;
+    }
+    
+    .doctor , .orangeBox, .greenBox{
+        display: none;
+    }
+    .left-text .topAngle, .left-text .bottomAngle{
+        
+        width: 18px;
+    }
+    .left-text .bottomAngle {
+        left: 70%;
+        top: 63%;
+        
+    }
+    
+    .left-text .mouse {
+        width: 30px;
+        left: 77%;
+        top: 68%;
+    }
 }
