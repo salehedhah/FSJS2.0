@@ -1,5 +1,5 @@
-# Project 04
-in this project i have created a landing page for HeadPhones Selling Website.
+# Project 08
+in this project i have created a Hosting website landing page.
 
 # Technologies Used
 ![HTML 5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)

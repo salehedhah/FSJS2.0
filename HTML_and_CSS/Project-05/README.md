@@ -6,4 +6,4 @@ in this project i have created a landing page for Health Care Website.
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
 # Output
-<img src="./Output.png" />
+<img src="./output.png" />

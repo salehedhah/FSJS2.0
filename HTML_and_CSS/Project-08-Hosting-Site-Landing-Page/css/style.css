@@ -1,0 +1,573 @@
+/* Global Rules  */
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #000000ea;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+section {
+    padding: 4rem 0;
+}
+
+header,
+footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+[alt="brand-logo"] {
+    height: 35px;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bg-blue {
+    background-color: #0C8BFD;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.bg-black{
+    background-color: black;
+}
+
+.text-white{
+    color: white;
+}
+.text-black{
+    color: black;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+
+/* End Global Rules */
+
+/* Header Styling starts */
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+header nav ul li a {
+    color: rgb(194, 194, 194);
+    font-size: 16px;
+}
+
+header nav .login-btn {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+/* Header Styling Ends */
+
+/* Landing section Styling starts  */
+.landing-section {
+    height: 605px;
+}
+
+.landing-section-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* left text  */
+.landing-section-left-text {
+    width: 550px;
+}
+
+.landing-section-left-text h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.landing-section-left-text h1 em {
+    color: #0b7ee2;
+}
+
+.landing-section-left-text p {
+    color: rgb(160, 160, 160);
+    margin-bottom: 3rem;
+    width: 80%;
+}
+
+.landing-section-btns-wrapper button {
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 30px;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+.landing-section-btns-wrapper .try-start-free-btn {
+    background-color: transparent;
+    border: 1px solid #fff;
+    margin-left: 1rem;
+}
+
+/* right text */
+.landing-section-container img {
+    max-width: 500px;
+}
+
+/* Landing section Styling Ends  */
+
+/* Logo section starts */
+.logo-section {
+    padding: 0;
+    background-color: #333;
+}
+
+.logo-section-container {
+    display: flex;
+    padding: 2rem 6rem;
+    justify-content: space-between;
+}
+
+/* Logo section Ends */
+
+/* Service Features section starts */
+.service-features-container {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.service-features-container>h3 {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.service-features-container>p {
+    color: rgb(160, 160, 160);
+    margin-bottom: 4rem;
+    max-width: 40%;
+}
+
+.service-features-cards-grid {
+    display: grid;
+    align-items: center;
+    gap: 0 40px;
+    justify-content: center;
+    grid-template-columns: repeat(3, 300px);
+}
+
+
+.grid-card {
+    padding: 15px;
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 25px;
+}
+
+.grid-card>img {
+    width: 4.5rem;
+    margin-bottom: 20px;
+}
+
+.grid-card h4 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.grid-card>p {
+    color: rgb(160, 160, 160);
+    margin-bottom: 25px;
+}
+
+.grid-card-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+    transform: translateY(-30px);
+    box-shadow: 2px 29px 40px -11px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 2px 29px 40px -11px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 2px 29px 40px -11px rgba(0, 0, 0, 0.25);
+}
+
+
+
+/* Service Features section Ends */
+
+/* Advanced Services section Starts */
+.advanced-services-container{
+    color: black;
+}
+.advanced-services-container > h3{
+    font-size: 3rem;
+    font-weight: 500;
+    width: 90%;
+    margin-bottom: 3rem;
+}
+.advanced-services-grid{
+    display: grid;
+    grid-template-columns: repeat(2,  minmax(55%, 45%) minmax(40%, 45%));
+    justify-content: space-between;
+    column-gap: 30px;
+}
+
+/* left-grid  */
+.advanced-services-grid-card-left{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.advanced-services-grid-card-left .grid-card-btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 30px;
+    border: 1px solid #777;
+    border-radius: 40px;
+    font-size: 25px;
+    font-weight: 500;
+}
+.advanced-services-grid-card-left .grid-card-btn > img{
+    width: 30px;
+}
+
+/* right-grid  */
+.advanced-services-grid-card-right{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: black;
+    padding: 20px 15px;
+    border-radius: 25px;
+}
+
+.advanced-services-grid-card-right .grid-card-feature{
+    color: rgb(230, 230, 230);
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #333;
+    border-radius: 40px;
+    font-size: 15px;
+}
+.advanced-services-grid-card-right .white-circle{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(240, 240, 240);
+    margin-right: 15px;
+}
+
+/* Advanced Services section  Ends*/
+
+/* Our Pricing Section Strts  */
+.pricing-section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.pricing-section-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pricing-section-heading h3{
+    font-size: 3rem;
+    font-weight: 500;
+    width: 80%;
+    margin-bottom: 6rem;
+    text-align: center;
+}
+.pricing-cards-grid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+.pricing-card{
+    background-color: #fff;
+    color: black;
+    padding: 25px 20px;
+    border-radius: 15px;
+    flex-basis: 26%;
+}
+.pricing-card > h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.pricing-card > span{
+    font-size: 30px;
+    font-weight: 700;
+}
+.pricing-card > span::after{
+    content: '/month';
+    color: #777;
+    font-size: 17px;
+    font-weight: 500;
+}
+.pricing-card > p{
+    font-size: 13px;
+    font-weight: 500;
+    padding: 15px 0; 
+    border-bottom: 2px solid rgb(221, 221, 221);
+}
+
+.features-included{
+    margin-top: 2rem;
+}
+.features-included > ul li{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.features-included > ul li > img{
+    width: 15px;
+    margin-right: 10px;
+}
+.pricing-select-btn{
+    width: 100%;
+    font-size: 16px;
+    padding: 13px 15px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 15px;
+}
+.pricing-card-2{
+    background-color: #0C8BFD;
+    color: #fff;
+}
+.pricing-card-2 span::after{
+    content: '/month';
+    color: rgba(226, 226, 226, 0.877);
+    font-size: 17px;
+    font-weight: 500;
+}
+.pricing-card-2 .pricing-select-btn{
+
+}
+/* Our Pricing Section Ends  */
+
+/* <!-- customers reviews section starts--> */
+.customer-reviews-section-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+.customer-reviews-section-text > h3{
+    font-size: 3rem;
+    font-weight: 600;
+    width: 400px;
+}
+.customer-reviews-section-text > p{
+    max-width: 400px;
+    font-size: 15px;
+    font-weight: 300;
+    color: #777;
+}
+
+.customer-reviews-section-cards{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+}
+
+.customer-reviews-section-cards::-webkit-scrollbar {
+    height: 5px;
+}
+.customer-reviews-section-cards::-webkit-scrollbar-track {
+    background-color: rgba(224, 224, 224, 0.637);
+    border: 1px solid rgba(224, 224, 224, 0.137);
+    border-radius: 15px;
+    width: 10px;
+}
+
+.customer-reviews-section-cards::-webkit-scrollbar-thumb {
+    background-color:#0b7ee2;
+    border-radius: 10px;
+    width: 10px;
+}
+
+
+.review-card{
+    min-width: 35rem;
+    padding: 30px 20px;
+    border: 1px solid rgba(119, 119, 119, 0.575);
+    border-radius: 15px;
+    margin-bottom: 60px;
+}
+.review-card >*{
+    margin-bottom: 20px;
+}
+.review-card > [alt="Vector"] {
+    height: 30px;
+}
+.review-card >.reviewr-info{
+    display: flex;
+    flex-direction: column;
+}
+.review-card .reviewr-info > strong{
+    font-size: 14px;
+}
+.review-card .reviewr-info > span{
+    font-size: 12px;
+}
+.review-card > p{
+    font-size: 15px;
+    font-weight: 300;
+}
+.review-card > [alt="Star"]{
+    width: 25px;
+    margin-bottom: -10px;
+}
+/* <!-- customers reviews section Ends--> */
+
+/* foote starts */
+
+footer .sign-up-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+footer .sign-up-container > h3{
+    max-width: 85%;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 4rem;
+}
+
+footer .sign-up-container > .signup-form{
+    background-color: rgb(41, 41, 41);
+    width: 85%;
+    padding: 35px 20px;
+    border-radius: 20px;
+}
+footer .sign-up-container > .signup-form > form{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+footer .sign-up-container > .signup-form > form > input{
+    width: 28%;
+    padding: 15px 0;
+    padding-left: 15px ;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(59, 59, 59);
+    outline: none;
+    caret-color: #fff;
+    
+}
+
+footer .sign-up-container > .signup-form > form > button{
+    padding:10px 25px ;
+    border-radius:20px;
+    color: rgb(223, 223, 223);
+    border: none;
+    cursor: pointer;
+}
+
+footer .footer-links-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid rgb(82, 82, 82);
+    border-bottom: 1px solid rgb(82, 82, 82);
+    padding: 50px 0px;
+}
+
+footer .footer-links-container > .links-list > h4{
+    font-size: 17px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+footer .footer-links-container > .links-list > ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+footer .footer-links-container > .links-list > ul > li > a{
+    font-size: 13px;
+    font-weight: normal;
+    color: rgb(207, 207, 207);
+}
+
+
+footer .logo-container{
+    padding: 25px 0px;
+}
+/* footer Ends  */
