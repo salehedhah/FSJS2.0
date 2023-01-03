@@ -23,3 +23,6 @@
 
 ## Project 08
 [Link](./Project-08-Hosting-Site-Landing-Page/README.md)
+
+## Project 09
+[Link](./Project-09-Gaming-Landing-page/README.md)

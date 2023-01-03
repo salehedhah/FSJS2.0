@@ -1,0 +1,643 @@
+/* Global Rules  */
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+button, a {
+    cursor: pointer;
+}
+
+body {
+    background-color: white;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 4rem 0;
+}
+.section-heading{
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+
+header,
+footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.primary-btn{
+    color: #fff;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    border: none;
+    background-color: #f4694c;
+}
+
+[alt="brand-logo"] {
+    height: 40px;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.bg-orange {
+    background-color: #f4694c;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.bg-black{
+    background-color: black;
+}
+.bg-dark-blue{
+    background-color: rgb(0, 0, 15);
+}
+
+.text-white{
+    color: white;
+}
+.text-black{
+    color: black;
+}
+.text-gray{
+    color: rgb(223, 223, 223);
+}
+.text-dark-gray{
+    color: rgb(189, 189, 189);
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1400px) {
+    .container {
+        width: 1270px;
+    }
+}
+
+
+/* End Global Rules */
+
+
+/* landing page starts  */
+.landing-page{
+    height: 100vh;
+    color: #fff;
+    background-image: url('../Assets/Photos/futuristic-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.landing-page .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(8, 8, 8, 0.418);
+}
+
+/* navbar  */
+
+.landing-page .container .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 15vh;
+    position: relative;
+    z-index: 1;
+}
+
+.navbar > ul {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.navbar .nav-btns > *{
+    padding: 15px 35px;
+    color: #fff;
+}
+
+.navbar .nav-btns > .signin{
+    background-color: transparent;
+    border: none;
+    font-size: 17px;
+}
+.navbar .nav-btns > .signup{
+    font-size: 17px;
+}
+
+/* hero section  */
+.hero-section{
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 15vh);
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-left-text{
+    flex-basis: 50%;
+}
+
+.hero-left-text > h1{
+    font-size: 3.2rem;
+}
+
+.hero-left-text > p{
+    margin: 2rem 0;
+}
+
+.hero-left-text > .hero-btns {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.hero-left-text > .hero-btns > *{
+    padding: 15px 40px;
+    font-size: 1.1rem;
+} 
+
+.hero-left-text > .hero-btns > .learn-more{
+    background-color:transparent;
+    border: 2px solid rgb(189, 189, 189);
+}
+
+.hero-right-text{
+    display: flex;
+    flex-direction: column;
+    min-height: 80%;
+    justify-content: end;
+    align-items: center;
+}
+.hero-right-text > img{
+    width: 90px;
+    margin-bottom: 10rem;
+}
+
+.hero-right-text > .text {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hero-right-text > .text > [alt="dash"]{
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+.hero-right-text > .text > p{
+    font-size: 1.5rem;
+    width: 40%;
+    text-transform: capitalize;
+}
+
+.hero-right-text > .text > [alt="nextArrow"]{
+    width: 70px;
+    align-self: end;
+    margin-left: 60px;
+}
+/* landing page Ends  */
+
+/* games cards section starts */
+.games-section-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.games-section-container > h3{
+    max-width: 50rem;
+    margin: 3.5rem 0;
+    text-align: center;
+}
+
+.games-cards-grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    align-items: center;
+    gap: 1.2rem;
+}
+.games-cards-grid > .card-1{
+    
+    background-image: url('../Assets/Photos/image\ 2.png');
+    background-position:  right;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.games-cards-grid > .card-2{
+    
+    background-image: url('../Assets/Photos/image\ 4.png');
+    background-position:  center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.games-cards-grid > .card-3{
+    
+    background-image: url('../Assets/Photos/image\ 3.png');
+    background-position:  center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.games-cards-grid > .card-4{
+    
+    background-image: url('../Assets/Photos/image-5.png');
+    background-position:  center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.games-cards-grid > .game-card{
+    height: 300px;
+    position: relative;
+}
+
+
+
+.games-cards-grid .game-card > .game-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    width: 100%;
+    padding: .4rem .9rem;
+    bottom: 0;
+    position: absolute;
+    z-index: 2;
+}
+
+.games-cards-grid > .card-1 > .game-info > .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(122, 122, 122, 0.5);
+    backdrop-filter: blur(15px);
+    z-index:-1;
+}
+
+.games-cards-grid > .card-2 > .game-info > .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(37, 34, 34, 0.5);
+    backdrop-filter: blur(15px);
+    z-index:-1;
+}
+
+.games-cards-grid > .card-3 > .game-info > .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(122, 122, 122, 0.5);
+    backdrop-filter: blur(15px);
+    z-index:-1;
+}
+
+.games-cards-grid > .card-4 > .game-info > .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(122, 122, 122, 0.5);
+    backdrop-filter: blur(15px);
+    z-index:-1;
+}
+
+
+
+.games-cards-grid .game-card > .game-info > .left-info > h4{
+    font-weight: normal;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+
+.games-cards-grid .game-card > .game-info > .left-info > p{
+    font-size: 13px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+.games-cards-grid .game-card > .game-info > .right-info > button{
+    padding: 10px 20px;
+    text-transform: capitalize;
+    color: #fff;
+    border: none;
+}
+
+/* game cards section Ends  */
+
+/* Eplore Now section starts  */
+.explore-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.explore-container > .left-side{
+    background-image: url('../Assets/Photos/Rectangle\ 57.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-basis: 43%;
+    height: 400px;
+}
+
+.explore-container > .right-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    flex-basis: 45%;
+}
+
+.explore-container > .right-side > h3{
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.explore-container > .right-side > p{
+    font-size: 14px;
+    color: rgb(99, 99, 99);
+    text-transform: capitalize;
+}
+.explore-container > .right-side > .explore-btns{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 15px;
+}
+.explore-container > .right-side > .explore-btns > *{
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    border: none;
+}
+
+.explore-container > .right-side > .explore-btns > .Learn-more-btn{
+    background-color:transparent;
+    border: 2px solid #f4694c;
+    color: #f4694c;
+}
+/* Eplore Now section Ends  */
+
+
+/* recommended games section start */
+.recommended-games-container > .heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.recommended-games-container > .heading > h3{
+    font-size: 2.5rem;
+    max-width: 35rem;
+    text-transform: capitalize;
+}
+
+.recommended-games-container > .heading > .left-right-btns{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 1rem;
+}
+
+.recommended-games-container > .heading > .left-right-btns >*{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+.recommended-games-container > .heading > .left-right-btns > .left{
+    background-color: #e9b1a360;
+}
+
+.recommended-games-container > .heading > .left-right-btns >.left> img{
+    width:30px;
+}
+
+.recommended-games-container > .heading > .left-right-btns >.right > img{
+    width:30px;
+}
+
+
+.recommended-games-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    align-items: center;
+    gap: 2rem;
+    margin-top: 4rem;
+
+}
+.recommended-games-wrapper > .game-card{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.recommended-games-wrapper > .game-card >  img{
+    width: 220px;
+}
+
+.recommended-games-wrapper > .game-card > .game-info > h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: .9rem;
+}
+
+.recommended-games-wrapper > .game-card > .game-info > span{
+    color: #f4694c;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.recommended-games-wrapper > .game-card > .game-info > p{
+    font-size: 14px;
+    color: rgb(99, 99, 99);
+    margin: .9rem 0;
+}
+
+
+/* recommended games section Ends */
+
+
+/* most popular games of the year section starts */
+.games-of-the-year-container h3{
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+.images-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2,1fr 2fr);
+    position: relative;
+    gap: 4rem;
+    z-index: 1;
+}
+.images-wrapper :first-child > img{
+    width: 450px;
+}
+.images-wrapper :last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.images-wrapper :last-child > p{
+    font-size: 13px;
+    font-weight:400;
+    margin: 4rem 0;
+}
+.images-wrapper :last-child > :last-child{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 3rem;
+}
+.images-wrapper :last-child > .gameOfTheWorld{
+    position: absolute;
+    top: 150px;
+    right: -130px;
+    z-index: -1;
+}
+
+.images-wrapper :last-child > :last-child > img{
+    width: 300px;
+}
+/* most popular games of the year section Ends */
+
+/* Get Started Section starts  */
+.get-started-section{
+    height: 550px;
+    width: 100%;
+    background-image: url('../Assets/Photos/Rectangle\ 606.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    color: #fff;
+}
+.get-started-section::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.61);
+}
+.get-started-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    gap: 1rem;
+}
+.get-started-container > h3{
+    width: 600px;
+}
+.get-started-container > p{
+    font-size: 14px;
+    width: 350px;
+    margin-bottom: 1rem;
+}
+/* get started section ends  */
+
+/* footer starts  */
+footer > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    column-gap: 3rem;
+    color: #fff;
+}
+footer > div > .col > h6{
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: 1.5rem;
+}
+footer > div > .col > ul{
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+footer > div > .col > ul > li > a{
+    font-size: 14px;
+    color: #cecece;
+    font-weight:400;
+}
+footer > div > :first-child > p{
+    font-size: 12px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+footer > div > :first-child >.social-media{
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+}
+footer > div > :first-child >.social-media > img{
+    width: 35px;
+    margin-top: 10px;
+}   
+
+footer > div > :last-child > p{
+    color: #cecece;
+
+}
+
+/* footer ends  */
